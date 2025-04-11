@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Confirmation Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <form>
+    <h2>Contact Details Confirmed</h2><br><br>
+
+    <p><strong>Name: </strong> {{ name }}</p><br><br>
+    <p><strong>Email: </strong> {{ email }}</p><br><br>
+    <p><strong>Phone Number: </strong> {{ phone_number }}</p><br><br>
+    <p><strong>Message: </strong> {{ message }}</p><br><br>
+    <p><strong>Subject: </strong> {{ subject }}</p><br><br>
+    <p><strong>Preferred Contact Method: </strong> {{ preferred_contact }}</p><br><br>
+    <p><strong>Agreement: </strong> Yes</p><br><br>
+    </form>
+</body>
+</html>
